@@ -14,5 +14,12 @@ namespace ASP_Pustok.Areas.Manage.Controllers
         {
             return View();
         }
+
+        public IActionResult Error()
+        {
+
+            return View();
+        }
+
     }
 }

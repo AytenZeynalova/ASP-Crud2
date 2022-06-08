@@ -47,6 +47,10 @@ namespace ASP_Pustok.Areas.Manage.Controllers
         public IActionResult Edit(int id)
         {
             Author author = _context.Authors.FirstOrDefault(x => x.Id == id);
+            if(author== null)
+            {
+               return RedirectToAction("error", "dashboard");
+            }
             return View(author);
         }
 
@@ -60,9 +64,28 @@ namespace ASP_Pustok.Areas.Manage.Controllers
 
             return RedirectToAction("index");
         }
-        public IActionResult Delete()
+        public IActionResult Delete(int id)
         {
-            return View();
+            Author author = _context.Authors.Include(x=> x.Books).FirstOrDefault(x => x.Id == id);
+            if(author== null)
+            {
+                return RedirectToAction("error", "dashboard");
+            }
+            return View(author);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Author author)
+        {
+            Author existAuth = _context.Authors.FirstOrDefault(x => x.Id == author.Id);
+            if (existAuth == null)
+            {
+                return RedirectToAction("error", "dashboard");
+            }
+            _context.Authors.Remove(existAuth);
+            _context.SaveChanges();
+
+            return RedirectToAction("index");
         }
     }
 }

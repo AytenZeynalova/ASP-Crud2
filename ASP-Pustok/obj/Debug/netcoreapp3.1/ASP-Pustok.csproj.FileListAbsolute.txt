@@ -458,3 +458,4 @@ C:\Users\aytnz\Desktop\ASP-Pustok\ASP-Pustok\obj\Debug\netcoreapp3.1\ASP-Pustok.
 C:\Users\aytnz\Desktop\ASP-Pustok\ASP-Pustok\obj\Debug\netcoreapp3.1\ASP-Pustok.genruntimeconfig.cache
 C:\Users\aytnz\Desktop\ASP-Pustok\ASP-Pustok\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Author\Edit.cshtml.g.cs
 C:\Users\aytnz\Desktop\ASP-Pustok\ASP-Pustok\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Author\Delete.cshtml.g.cs
+C:\Users\aytnz\Desktop\ASP-Pustok\ASP-Pustok\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Dashboard\error.cshtml.g.cs
