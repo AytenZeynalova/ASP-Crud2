@@ -1,16 +1,16 @@
 ﻿@model Author
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
 <div class="container">
     <div class="row">
         <div class="col-md-8 mx-auto">
 
-            <form asp-action="create" method="post">
+            <form asp-action="edit" method="post">
                 <div class="mb-3">
                     <label asp-for="FullName" class="form-label">fullname</label>
-                    <input asp-for="FullName" type="text" class="form-control" >
+                    <input asp-for="FullName" type="text" class="form-control">
                     <span class="text-danger" asp-validation-for="FullName"></span>
                 </div>
 
@@ -29,3 +29,4 @@
         </div>
     </div>
 </div>
+

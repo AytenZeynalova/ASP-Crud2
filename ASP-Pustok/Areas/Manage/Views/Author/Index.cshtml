@@ -33,7 +33,7 @@
                                 <td>@auth.BirthDate.ToString("dd-MM-yyyy")</td>
                                 <td>@auth.Books.Count()</td>
                                 <td>
-                                    <a asp-action="edit" class="btn btn-warning">Edit</a>
+                                    <a asp-action="edit" asp-route-id="@auth.Id" class="btn btn-warning">Edit</a>
                                     <a asp-action="delete" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>

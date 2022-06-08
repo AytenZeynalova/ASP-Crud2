@@ -1,4 +1,5 @@
 ﻿using ASP_Pustok.DAL;
+using ASP_Pustok.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,11 +23,45 @@ namespace ASP_Pustok.Areas.Manage.Controllers
             var data = _context.Authors.Include(x => x.Books).ToList();
             return View(data);
         }
-
-        public IActionResult Create( string fullname)
+            
+        public IActionResult Create()
         {
-            if (fullname != null)
-                return Content(fullname);
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult Create(Author author)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            _context.Authors.Add(author);
+            _context.SaveChanges();
+            return RedirectToAction("index");
+        }
+
+
+        public IActionResult Edit(int id)
+        {
+            Author author = _context.Authors.FirstOrDefault(x => x.Id == id);
+            return View(author);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Author author)
+        {
+            Author existAuth = _context.Authors.FirstOrDefault(x => x.Id == author.Id);
+            existAuth.FullName = author.FullName;
+            existAuth.BirthDate = author.BirthDate;
+            _context.SaveChanges();
+
+            return RedirectToAction("index");
+        }
+        public IActionResult Delete()
+        {
             return View();
         }
     }

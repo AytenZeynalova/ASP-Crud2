@@ -8480,11 +8480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aytnz\\Desktop\\ASP-Area\\ASP-Pustok\\ASP-Pustok.csproj",
+      "projectUniqueName": "C:\\Users\\aytnz\\Desktop\\ASP-Pustok\\ASP-Pustok\\ASP-Pustok.csproj",
       "projectName": "ASP-Pustok",
-      "projectPath": "C:\\Users\\aytnz\\Desktop\\ASP-Area\\ASP-Pustok\\ASP-Pustok.csproj",
+      "projectPath": "C:\\Users\\aytnz\\Desktop\\ASP-Pustok\\ASP-Pustok\\ASP-Pustok.csproj",
       "packagesPath": "C:\\Users\\aytnz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aytnz\\Desktop\\ASP-Area\\ASP-Pustok\\obj\\",
+      "outputPath": "C:\\Users\\aytnz\\Desktop\\ASP-Pustok\\ASP-Pustok\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aytnz\\AppData\\Roaming\\NuGet\\NuGet.Config",

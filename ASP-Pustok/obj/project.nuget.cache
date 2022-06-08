@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kKU11ZgJDujep8vO45FZjZM1YLIXBWGZo9ROLYnzMknCn1RQiHGo/cf9QSarpYrOaEjqMchq2UUx5vxSCvLmcQ==",
+  "dgSpecHash": "taDjFKLPD5hJDD1E8v/leRKpKCcdMXSRKrnN/Smfqie20CetGMEy7/WpJxmZk3h+qJz0BATBpq8WL5lNwmQzNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aytnz\\Desktop\\ASP-Area\\ASP-Pustok\\ASP-Pustok.csproj",
+  "projectFilePath": "C:\\Users\\aytnz\\Desktop\\ASP-Pustok\\ASP-Pustok\\ASP-Pustok.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aytnz\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\aytnz\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
